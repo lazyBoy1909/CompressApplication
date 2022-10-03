@@ -28,6 +28,9 @@ PODS:
   - GTMSessionFetcher/Full (1.7.2):
     - GTMSessionFetcher/Core (= 1.7.2)
   - lottie-ios (3.4.1)
+  - MSAL (1.2.3):
+    - MSAL/app-lib (= 1.2.3)
+  - MSAL/app-lib (1.2.3)
   - Resolver (1.5.0)
   - RIBs (0.9.3):
     - RxRelay (~> 5.1)
@@ -48,6 +51,7 @@ DEPENDENCIES:
   - GoogleAPIClientForREST/Drive
   - GoogleSignIn
   - lottie-ios
+  - MSAL
   - Resolver
   - RIBs (from `https://github.com/uber/RIBs/`, tag `v0.10.0`)
   - RxCocoa
@@ -66,6 +70,7 @@ SPEC REPOS:
     - GTMAppAuth
     - GTMSessionFetcher
     - lottie-ios
+    - MSAL
     - Resolver
     - RxCocoa
     - RxRelay
@@ -93,6 +98,7 @@ SPEC CHECKSUMS:
   GTMAppAuth: 4d8f864896f3646f0c33baf38a28362f4c601e15
   GTMSessionFetcher: 5595ec75acf5be50814f81e9189490412bad82ba
   lottie-ios: 016449b5d8be0c3dcbcfa0a9988469999cd04c5d
+  MSAL: f8cbd986b401c947ae9b09f7dae652f95f60fce1
   Resolver: 68984624572763018fd8ec7b8e3e8df0e3b6bba5
   RIBs: d4c4c7e7e4580f0bbe88bdc88b6c11704a738b7f
   RxCocoa: e2ed092d5432e4296aa818021d27de4090ac0354
@@ -102,6 +108,6 @@ SPEC CHECKSUMS:
   SwiftLint: 284cea64b6187c5d6bd83e9a548a64104d546447
   TLLogging: da818f99577a4629c555d6a6db6d4916878c2b71
 
-PODFILE CHECKSUM: 188bea6a6324d8b7686d2265bbf4363d9e5d5b5d
+PODFILE CHECKSUM: aad99a4e6a8f85a53523e4461f877696fb9ec3ea
 
 COCOAPODS: 1.11.3

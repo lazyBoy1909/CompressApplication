@@ -9,13 +9,13 @@ import MediaPlayer
 import RIBs
 import TLLogging
 
-protocol HomeInteractable: Interactable, OpenFolderListener, SelectMediaListener, CompressListener, ExtractListener, SelectCategoryAudioListener, SettingListener, AddFileFromGoogleDriveListener {
+protocol HomeInteractable: Interactable, OpenFolderListener, SelectMediaListener, CompressListener, ExtractListener, SelectCategoryAudioListener, SettingListener, AddFileFromGoogleDriveListener, AddFileFromOneDriveListener {
     var router: HomeRouting? { get set }
     var listener: HomeListener? { get set }
 }
 
 
-protocol HomeViewControllable: ViewControllable, ExtractViewControllable, CompressViewControllable, AddFileFromGoogleDriveViewControllable{
+protocol HomeViewControllable: ViewControllable, ExtractViewControllable, CompressViewControllable, AddFileFromGoogleDriveViewControllable, AddFileFromOneDriveViewControllable{
     func showDocumentPicker()
 }
 
@@ -41,6 +41,9 @@ final class HomeRouter: ViewableRouter<HomeInteractable, HomeViewControllable> {
     var addFileFromGoogleDriveBuilder: AddFileFromGoogleDriveBuildable
     var addFileFromGoogleDriveRouter: AddFileFromGoogleDriveRouting?
 
+    var addFileFromOneDriveBuilder: AddFileFromOneDriveBuildable
+    var addFileFromOneDriveRouter: AddFileFromOneDriveRouting?
+
     init(interactor: HomeInteractable,
          viewController: HomeViewControllable,
          openFolderBuilder: OpenFolderBuildable,
@@ -49,7 +52,8 @@ final class HomeRouter: ViewableRouter<HomeInteractable, HomeViewControllable> {
          compressBuilder: CompressBuildable,
          extractBuilder: ExtractBuildable,
          selectCategoryAudioBuilder: SelectCategoryAudioBuildable,
-         addFileFromGoogleDriveBuilder: AddFileFromGoogleDriveBuildable) {
+         addFileFromGoogleDriveBuilder: AddFileFromGoogleDriveBuildable,
+         addFileFromOneDriveBuilder: AddFileFromOneDriveBuildable) {
         self.openFolderBuilder = openFolderBuilder
         self.selectMediaBuilder = selectMediaBuilder
         self.compressBuilder = compressBuilder
@@ -57,6 +61,7 @@ final class HomeRouter: ViewableRouter<HomeInteractable, HomeViewControllable> {
         self.settingBuilder = settingBuilder
         self.addFileFromGoogleDriveBuilder = addFileFromGoogleDriveBuilder
         self.selectCategoryAudioBuilder = selectCategoryAudioBuilder
+        self.addFileFromOneDriveBuilder = addFileFromOneDriveBuilder
         super.init(interactor: interactor, viewController: viewController)
         interactor.router = self
     }
@@ -247,11 +252,18 @@ extension HomeRouter: HomeRouting {
     }
 
     func routeToAddFileFromOneDrive(folderURL: URL) {
-
+        let router = self.addFileFromOneDriveBuilder.build(withListener: self.interactor, downloadFolderURL: folderURL)
+        attachChild(router)
+        self.addFileFromOneDriveRouter = router
     }
 
     func dismissAddFileFromOneDrive() {
+        guard let router = self.addFileFromOneDriveRouter else {
+            return
+        }
 
+        detachChild(router)
+        self.addFileFromOneDriveRouter = nil
     }
 
     func showDocumentPicker() {

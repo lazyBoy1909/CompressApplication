@@ -112,5 +112,9 @@ extension DIConnector {
         DIContainer.register(AddFileFromGoogleDriveBuildable.self) { _, args in
             return AddFileFromGoogleDriveBuilder(dependency: args.get())
         }
+
+        DIContainer.register(AddFileFromOneDriveBuildable.self) { _, args in
+            return AddFileFromOneDriveBuilder(dependency: args.get())
+        }
     }
 }

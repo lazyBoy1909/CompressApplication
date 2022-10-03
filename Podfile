@@ -47,4 +47,5 @@ target 'ZIP-APP' do
   binary_pod 'DifferenceKit'
   binary_pod 'GoogleSignIn'
   binary_pod 'GoogleAPIClientForREST/Drive'
+  binary_pod 'MSAL' # OneDrive
 end

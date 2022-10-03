@@ -31,6 +31,25 @@
 		C87A2C2928CCABDC00305170 /* OpenCloudViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C87A2C1828CCABDC00305170 /* OpenCloudViewController.swift */; };
 		C87A2C2C28CCADAB00305170 /* HomeInteractor+AddFileFromGoogleDrive.swift in Sources */ = {isa = PBXBuildFile; fileRef = C87A2C2A28CCADAB00305170 /* HomeInteractor+AddFileFromGoogleDrive.swift */; };
 		C87A2C2D28CCADAB00305170 /* HomeComponent+AddFileFromGoogleDrive.swift in Sources */ = {isa = PBXBuildFile; fileRef = C87A2C2B28CCADAB00305170 /* HomeComponent+AddFileFromGoogleDrive.swift */; };
+		C87A2C8E28D5D8AA00305170 /* AddFileFromOneDriveRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C87A2C8028D5D8AA00305170 /* AddFileFromOneDriveRouter.swift */; };
+		C87A2C8F28D5D8AA00305170 /* AddFileFromOneDriveComponent+OpenCloud.swift in Sources */ = {isa = PBXBuildFile; fileRef = C87A2C8128D5D8AA00305170 /* AddFileFromOneDriveComponent+OpenCloud.swift */; };
+		C87A2C9028D5D8AA00305170 /* AddFileFromOneDriveInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C87A2C8228D5D8AA00305170 /* AddFileFromOneDriveInteractor.swift */; };
+		C87A2C9128D5D8AA00305170 /* AddFileFromOneDriveInteractor+OpenCloud.swift in Sources */ = {isa = PBXBuildFile; fileRef = C87A2C8328D5D8AA00305170 /* AddFileFromOneDriveInteractor+OpenCloud.swift */; };
+		C87A2C9228D5D8AA00305170 /* AddFileFromOneDriveBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = C87A2C8428D5D8AA00305170 /* AddFileFromOneDriveBuilder.swift */; };
+		C87A2C9328D5D8AA00305170 /* OneDriveItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = C87A2C8628D5D8AA00305170 /* OneDriveItem.swift */; };
+		C87A2C9428D5D8AA00305170 /* OneDriveFetchAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = C87A2C8828D5D8AA00305170 /* OneDriveFetchAPI.swift */; };
+		C87A2C9528D5D8AA00305170 /* ODItemEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = C87A2C8A28D5D8AA00305170 /* ODItemEntity.swift */; };
+		C87A2C9628D5D8AA00305170 /* OneDriveFetchEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = C87A2C8B28D5D8AA00305170 /* OneDriveFetchEntity.swift */; };
+		C87A2C9728D5D8AA00305170 /* OneDriveServiceInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = C87A2C8C28D5D8AA00305170 /* OneDriveServiceInfo.swift */; };
+		C87A2C9828D5D8AA00305170 /* OneDriveService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C87A2C8D28D5D8AA00305170 /* OneDriveService.swift */; };
+		C87A2CA028D5DD9900305170 /* NetworkUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = C87A2C9A28D5DD9900305170 /* NetworkUtils.swift */; };
+		C87A2CA128D5DD9900305170 /* CommonResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = C87A2C9B28D5DD9900305170 /* CommonResponse.swift */; };
+		C87A2CA228D5DD9900305170 /* Middleware.swift in Sources */ = {isa = PBXBuildFile; fileRef = C87A2C9C28D5DD9900305170 /* Middleware.swift */; };
+		C87A2CA328D5DD9900305170 /* AFResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = C87A2C9D28D5DD9900305170 /* AFResponse.swift */; };
+		C87A2CA428D5DD9900305170 /* NetworkingClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = C87A2C9E28D5DD9900305170 /* NetworkingClient.swift */; };
+		C87A2CA528D5DD9900305170 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = C87A2C9F28D5DD9900305170 /* Endpoint.swift */; };
+		C87A2CA828D5DE2800305170 /* HomeComponent+AddFileFromOneDrive.swift in Sources */ = {isa = PBXBuildFile; fileRef = C87A2CA628D5DE2800305170 /* HomeComponent+AddFileFromOneDrive.swift */; };
+		C87A2CA928D5DE2800305170 /* HomeInteractor+AddFileFromOneDrive.swift in Sources */ = {isa = PBXBuildFile; fileRef = C87A2CA728D5DE2800305170 /* HomeInteractor+AddFileFromOneDrive.swift */; };
 		C8842DD928B9BEAF00673799 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8842DD828B9BEAF00673799 /* AppDelegate.swift */; };
 		C8842DE228B9BEB100673799 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C8842DE128B9BEB100673799 /* Assets.xcassets */; };
 		C8842DE528B9BEB100673799 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C8842DE328B9BEB100673799 /* LaunchScreen.storyboard */; };
@@ -424,6 +443,25 @@
 		C87A2C1828CCABDC00305170 /* OpenCloudViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OpenCloudViewController.swift; sourceTree = "<group>"; };
 		C87A2C2A28CCADAB00305170 /* HomeInteractor+AddFileFromGoogleDrive.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "HomeInteractor+AddFileFromGoogleDrive.swift"; sourceTree = "<group>"; };
 		C87A2C2B28CCADAB00305170 /* HomeComponent+AddFileFromGoogleDrive.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "HomeComponent+AddFileFromGoogleDrive.swift"; sourceTree = "<group>"; };
+		C87A2C8028D5D8AA00305170 /* AddFileFromOneDriveRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddFileFromOneDriveRouter.swift; sourceTree = "<group>"; };
+		C87A2C8128D5D8AA00305170 /* AddFileFromOneDriveComponent+OpenCloud.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AddFileFromOneDriveComponent+OpenCloud.swift"; sourceTree = "<group>"; };
+		C87A2C8228D5D8AA00305170 /* AddFileFromOneDriveInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddFileFromOneDriveInteractor.swift; sourceTree = "<group>"; };
+		C87A2C8328D5D8AA00305170 /* AddFileFromOneDriveInteractor+OpenCloud.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AddFileFromOneDriveInteractor+OpenCloud.swift"; sourceTree = "<group>"; };
+		C87A2C8428D5D8AA00305170 /* AddFileFromOneDriveBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddFileFromOneDriveBuilder.swift; sourceTree = "<group>"; };
+		C87A2C8628D5D8AA00305170 /* OneDriveItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OneDriveItem.swift; sourceTree = "<group>"; };
+		C87A2C8828D5D8AA00305170 /* OneDriveFetchAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OneDriveFetchAPI.swift; sourceTree = "<group>"; };
+		C87A2C8A28D5D8AA00305170 /* ODItemEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ODItemEntity.swift; sourceTree = "<group>"; };
+		C87A2C8B28D5D8AA00305170 /* OneDriveFetchEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OneDriveFetchEntity.swift; sourceTree = "<group>"; };
+		C87A2C8C28D5D8AA00305170 /* OneDriveServiceInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OneDriveServiceInfo.swift; sourceTree = "<group>"; };
+		C87A2C8D28D5D8AA00305170 /* OneDriveService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OneDriveService.swift; sourceTree = "<group>"; };
+		C87A2C9A28D5DD9900305170 /* NetworkUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkUtils.swift; sourceTree = "<group>"; };
+		C87A2C9B28D5DD9900305170 /* CommonResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommonResponse.swift; sourceTree = "<group>"; };
+		C87A2C9C28D5DD9900305170 /* Middleware.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Middleware.swift; sourceTree = "<group>"; };
+		C87A2C9D28D5DD9900305170 /* AFResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AFResponse.swift; sourceTree = "<group>"; };
+		C87A2C9E28D5DD9900305170 /* NetworkingClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkingClient.swift; sourceTree = "<group>"; };
+		C87A2C9F28D5DD9900305170 /* Endpoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
+		C87A2CA628D5DE2800305170 /* HomeComponent+AddFileFromOneDrive.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "HomeComponent+AddFileFromOneDrive.swift"; sourceTree = "<group>"; };
+		C87A2CA728D5DE2800305170 /* HomeInteractor+AddFileFromOneDrive.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "HomeInteractor+AddFileFromOneDrive.swift"; sourceTree = "<group>"; };
 		C8842DD528B9BEAF00673799 /* ZIP-APP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ZIP-APP.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C8842DD828B9BEAF00673799 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C8842DE128B9BEB100673799 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -910,6 +948,61 @@
 			path = Service;
 			sourceTree = "<group>";
 		};
+		C87A2C7F28D5D8AA00305170 /* AddFileFromOneDrive */ = {
+			isa = PBXGroup;
+			children = (
+				C87A2C8028D5D8AA00305170 /* AddFileFromOneDriveRouter.swift */,
+				C87A2C8128D5D8AA00305170 /* AddFileFromOneDriveComponent+OpenCloud.swift */,
+				C87A2C8228D5D8AA00305170 /* AddFileFromOneDriveInteractor.swift */,
+				C87A2C8328D5D8AA00305170 /* AddFileFromOneDriveInteractor+OpenCloud.swift */,
+				C87A2C8428D5D8AA00305170 /* AddFileFromOneDriveBuilder.swift */,
+				C87A2C8528D5D8AA00305170 /* Model */,
+				C87A2C8728D5D8AA00305170 /* Service */,
+			);
+			path = AddFileFromOneDrive;
+			sourceTree = "<group>";
+		};
+		C87A2C8528D5D8AA00305170 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C87A2C8628D5D8AA00305170 /* OneDriveItem.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C87A2C8728D5D8AA00305170 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				C87A2C8828D5D8AA00305170 /* OneDriveFetchAPI.swift */,
+				C87A2C8928D5D8AA00305170 /* Entity */,
+				C87A2C8C28D5D8AA00305170 /* OneDriveServiceInfo.swift */,
+				C87A2C8D28D5D8AA00305170 /* OneDriveService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		C87A2C8928D5D8AA00305170 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				C87A2C8A28D5D8AA00305170 /* ODItemEntity.swift */,
+				C87A2C8B28D5D8AA00305170 /* OneDriveFetchEntity.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		C87A2C9928D5DD9900305170 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				C87A2C9A28D5DD9900305170 /* NetworkUtils.swift */,
+				C87A2C9B28D5DD9900305170 /* CommonResponse.swift */,
+				C87A2C9C28D5DD9900305170 /* Middleware.swift */,
+				C87A2C9D28D5DD9900305170 /* AFResponse.swift */,
+				C87A2C9E28D5DD9900305170 /* NetworkingClient.swift */,
+				C87A2C9F28D5DD9900305170 /* Endpoint.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
 		C8842DCC28B9BEAF00673799 = {
 			isa = PBXGroup;
 			children = (
@@ -1059,6 +1152,7 @@
 		C8842E6728B9C4B500673799 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				C87A2C9928D5DD9900305170 /* Networking */,
 				C884311428C3488C00673799 /* CompressHelper */,
 				C8842E6828B9C4B500673799 /* CommonView */,
 				C8842E8328B9C4B500673799 /* Extensions */,
@@ -1166,6 +1260,7 @@
 		C8842EFE28B9C53100673799 /* Ribs */ = {
 			isa = PBXGroup;
 			children = (
+				C87A2C7F28D5D8AA00305170 /* AddFileFromOneDrive */,
 				C87A2C0328CCABDC00305170 /* OpenCloud */,
 				C87A2BF828CCABB300305170 /* AddFileFromGoogleDrive */,
 				C884319128C4989500673799 /* SelectAudio */,
@@ -1204,6 +1299,8 @@
 				C884312228C34E3F00673799 /* HomeInteractor+Setting.swift */,
 				C884308828C3452F00673799 /* HomeComponent+Compress.swift */,
 				C884308A28C3452F00673799 /* HomeComponent+Extract.swift */,
+				C87A2CA628D5DE2800305170 /* HomeComponent+AddFileFromOneDrive.swift */,
+				C87A2CA728D5DE2800305170 /* HomeInteractor+AddFileFromOneDrive.swift */,
 				C884308928C3452F00673799 /* HomeInteractor+Compress.swift */,
 				C884308728C3452F00673799 /* HomeInteractor+Extract.swift */,
 				C884303B28C1E5AB00673799 /* HomeComponent+SelectMedia.swift */,
@@ -2147,7 +2244,9 @@
 				C8842EE928B9C4B500673799 /* UIViewControllerExtensions.swift in Sources */,
 				C8842F8928C1975800673799 /* FolderDetailRouter.swift in Sources */,
 				C87A2C2028CCABDC00305170 /* CloudFolderCell.swift in Sources */,
+				C87A2CA028D5DD9900305170 /* NetworkUtils.swift in Sources */,
 				C884313428C3536900673799 /* OpenZipRouter.swift in Sources */,
+				C87A2C9728D5D8AA00305170 /* OneDriveServiceInfo.swift in Sources */,
 				C884317528C3545600673799 /* aestab.c in Sources */,
 				C8842EFA28B9C4B500673799 /* ViewControllableExtensions.swift in Sources */,
 				C8842EDF28B9C4B500673799 /* DeviceExtensions.swift in Sources */,
@@ -2161,9 +2260,12 @@
 				C8842FD328C1985A00673799 /* AddFilePopupBuilder.swift in Sources */,
 				C8842FE628C1994C00673799 /* SelectDestinationInteractor.swift in Sources */,
 				C8842EDB28B9C4B500673799 /* CIImageExtensions.swift in Sources */,
+				C87A2C9128D5D8AA00305170 /* AddFileFromOneDriveInteractor+OpenCloud.swift in Sources */,
+				C87A2CA528D5DD9900305170 /* Endpoint.swift in Sources */,
 				C884306628C3450F00673799 /* InputToCompressViewModel.swift in Sources */,
 				C87A2C1B28CCABDC00305170 /* OpenCloudInteractor+OpenCloud.swift in Sources */,
 				C884311328C347D800673799 /* CreatePasswordViewController.swift in Sources */,
+				C87A2C9028D5D8AA00305170 /* AddFileFromOneDriveInteractor.swift in Sources */,
 				C884306D28C3450F00673799 /* CompressInputValue.swift in Sources */,
 				C884318428C35E2800673799 /* OpenFolderComponent+PreviewImage.swift in Sources */,
 				C884310828C347D800673799 /* ChangePasswordViewModel.swift in Sources */,
@@ -2187,6 +2289,7 @@
 				C884307828C3450F00673799 /* CompressComponent+CompressLoading.swift in Sources */,
 				C8842EF328B9C4B500673799 /* CollectionViewExtensions.swift in Sources */,
 				C8842EFD28B9C4B500673799 /* BaseNavigationController.swift in Sources */,
+				C87A2CA328D5DD9900305170 /* AFResponse.swift in Sources */,
 				C884311C28C3488D00673799 /* MimeType.swift in Sources */,
 				C884307928C3450F00673799 /* CompressInteractor+InputToCompress.swift in Sources */,
 				C884318028C35E2800673799 /* OpenFolderInteractor+PreviewImage.swift in Sources */,
@@ -2196,8 +2299,10 @@
 				C884310A28C347D800673799 /* ChangePasswordViewController.swift in Sources */,
 				C884317228C3545600673799 /* aes_ni.c in Sources */,
 				C8842ED128B9C4B500673799 /* BezierPathExtensions.swift in Sources */,
+				C87A2CA228D5DD9900305170 /* Middleware.swift in Sources */,
 				C884308128C3450F00673799 /* ExtractInteractor.swift in Sources */,
 				C884311028C347D800673799 /* CreatePasswordInteractor.swift in Sources */,
+				C87A2CA128D5DD9900305170 /* CommonResponse.swift in Sources */,
 				C8842FAD28C197C300673799 /* OpenFolderComponent+SelectDestination.swift in Sources */,
 				C884306728C3450F00673799 /* InputToCompressBuilder.swift in Sources */,
 				C88431B128C4989500673799 /* SelectAudioInteractor.swift in Sources */,
@@ -2228,10 +2333,12 @@
 				C8842ED328B9C4B500673799 /* CLPlacemarkExtensions.swift in Sources */,
 				C8842EBE28B9C4B500673799 /* SolarTextField.swift in Sources */,
 				C884317028C3545600673799 /* fileenc.c in Sources */,
+				C87A2CA428D5DD9900305170 /* NetworkingClient.swift in Sources */,
 				C884307028C3450F00673799 /* CompressInteractor+InputPassword.swift in Sources */,
 				C87A2BFF28CCABB300305170 /* AddFileFromGoogleDriveBuilder.swift in Sources */,
 				C8842EC128B9C4B500673799 /* PlayerView.swift in Sources */,
 				C8842FC528C1984100673799 /* RenameItemInteractor.swift in Sources */,
+				C87A2CA828D5DE2800305170 /* HomeComponent+AddFileFromOneDrive.swift in Sources */,
 				C884310E28C347D800673799 /* CreatePasswordViewModel.swift in Sources */,
 				C884303828C1E46100673799 /* PreviewImageViewController.swift in Sources */,
 				C8842F8328C1975800673799 /* FolderDetailCellViewModel.swift in Sources */,
@@ -2241,7 +2348,9 @@
 				C884303328C1E46100673799 /* PreviewVideoInteractor.swift in Sources */,
 				C884306C28C3450F00673799 /* CompressRouter.swift in Sources */,
 				C8842E6528B9C48500673799 /* DIContainer.swift in Sources */,
+				C87A2C9228D5D8AA00305170 /* AddFileFromOneDriveBuilder.swift in Sources */,
 				C8842EBB28B9C4B500673799 /* ExtensibleTouchView.swift in Sources */,
+				C87A2C9528D5D8AA00305170 /* ODItemEntity.swift in Sources */,
 				C884306F28C3450F00673799 /* CompressInteractor.swift in Sources */,
 				C8842FEC28C1994C00673799 /* SelectDestinationRouter.swift in Sources */,
 				C88431A928C4989500673799 /* SelectAudioItemViewModel.swift in Sources */,
@@ -2274,6 +2383,9 @@
 				C88431AE28C4989500673799 /* SelectAudioCell.swift in Sources */,
 				C87A2C2328CCABDC00305170 /* OpenCloudComponent+OpenCloud.swift in Sources */,
 				C884316E28C3545600673799 /* hmac.c in Sources */,
+				C87A2C8F28D5D8AA00305170 /* AddFileFromOneDriveComponent+OpenCloud.swift in Sources */,
+				C87A2C8E28D5D8AA00305170 /* AddFileFromOneDriveRouter.swift in Sources */,
+				C87A2CA928D5DE2800305170 /* HomeInteractor+AddFileFromOneDrive.swift in Sources */,
 				C88431A328C4989500673799 /* SelectCategoryAudioInteractor.swift in Sources */,
 				C87A2C2728CCABDC00305170 /* CloudService.swift in Sources */,
 				C8842FF028C19D1400673799 /* OptionActionType.swift in Sources */,
@@ -2312,6 +2424,7 @@
 				C8842ED428B9C4B500673799 /* CMTimeExtensions.swift in Sources */,
 				C884303D28C1E5AC00673799 /* HomeComponent+SelectMedia.swift in Sources */,
 				C8842EEB28B9C4B500673799 /* UIViewExtensions.swift in Sources */,
+				C87A2C9428D5D8AA00305170 /* OneDriveFetchAPI.swift in Sources */,
 				C884316C28C3545600673799 /* minishared.c in Sources */,
 				C884316828C3545600673799 /* zip.c in Sources */,
 				C88430D828C3478300673799 /* InputPasswordInteractor.swift in Sources */,
@@ -2364,6 +2477,7 @@
 				C88430EE28C347B000673799 /* SettingRouter.swift in Sources */,
 				C8842EEF28B9C4B500673799 /* DateExtensions.swift in Sources */,
 				C884301328C1E3EB00673799 /* SelectMediaItemViewModel.swift in Sources */,
+				C87A2C9828D5D8AA00305170 /* OneDriveService.swift in Sources */,
 				C8842EDE28B9C4B500673799 /* StringExtensions.swift in Sources */,
 				C884307428C3450F00673799 /* CompressLoadingRouter.swift in Sources */,
 				C884316628C3545600673799 /* crypt.c in Sources */,
@@ -2373,11 +2487,13 @@
 				C8842DD928B9BEAF00673799 /* AppDelegate.swift in Sources */,
 				C8842EFB28B9C4B500673799 /* PresentableExtension.swift in Sources */,
 				C884317128C3545600673799 /* sha1.c in Sources */,
+				C87A2C9628D5D8AA00305170 /* OneDriveFetchEntity.swift in Sources */,
 				C884307A28C3450F00673799 /* CompressInteractor+CompressLoading.swift in Sources */,
 				C8842ED228B9C4B500673799 /* ArrayExtensions.swift in Sources */,
 				C884301228C1E3EB00673799 /* SelectMediaViewController.swift in Sources */,
 				C884301628C1E3EB00673799 /* SelectMediaNoDataView.swift in Sources */,
 				C8842EE528B9C4B500673799 /* DoubleExtensions.swift in Sources */,
+				C87A2C9328D5D8AA00305170 /* OneDriveItem.swift in Sources */,
 				C884311E28C3488D00673799 /* ExportAssetSession.swift in Sources */,
 				C8842F8D28C1975800673799 /* FolderDetailBuilder.swift in Sources */,
 				C884316F28C3545600673799 /* aescrypt.c in Sources */,
